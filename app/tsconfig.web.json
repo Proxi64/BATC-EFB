@@ -1,0 +1,21 @@
+{
+  // Web app shown in the EFB (src/web): Preact JSX. The library is limited to ES2017 so that
+  // functions missing from the simulator's JavaScript engine are caught at type-check time.
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2017", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src/web", "tests"]
+}

@@ -1,0 +1,20 @@
+/* BATC EFB shell: a frame for the web app (src/web) and a waiting screen.
+   Explicit edges instead of `inset` (not supported by the EFB's HTML engine). */
+.batc-efb { position: relative; width: 100%; height: 100%; overflow: hidden; background-color: #10141b; }
+.batc-efb .batc-efb-frame {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  border: 0; margin: 0; padding: 0; background-color: #10141b;
+}
+.batc-efb .batc-efb-wait {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background-color: #10141b; color: #e9eef5; font-family: "Roboto-Regular", sans-serif; text-align: center;
+}
+.batc-efb .batc-efb-spinner {
+  width: 8vmin; height: 8vmin; margin-bottom: 2.4vmin; border-radius: 50%;
+  border: 0.9vmin solid rgba(255, 255, 255, 0.15); border-top-color: #5e8fd0;
+  animation: batc-efb-spin 0.9s linear infinite;
+}
+.batc-efb .batc-efb-wait-title { font-family: "Roboto-Bold", sans-serif; font-size: 4vmin; margin-bottom: 0.8vmin; }
+.batc-efb .batc-efb-wait-text { font-size: 2.6vmin; color: #95a3b8; max-width: 80%; }
+@keyframes batc-efb-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

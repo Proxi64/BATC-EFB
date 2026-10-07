@@ -1,0 +1,30 @@
+{
+  "name": "batc-efb",
+  "version": "0.3.3",
+  "private": true,
+  "description": "BATC EFB: BeyondATC in the MSFS 2024 EFB tablet. Unofficial, unsupported community tool.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "npm run typecheck && node build.mjs && node ../tools/build-layout.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "sim": "node dev/batc-simulator.mjs"
+  },
+  "dependencies": {
+    "@microsoft/msfs-efb-api": "1.0.2",
+    "@microsoft/msfs-sdk": "2.0.5",
+    "@preact/signals": "^2.11.2",
+    "preact": "^10.29.8"
+  },
+  "devDependencies": {
+    "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+    "@microsoft/msfs-types": "1.14.6",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.28.2",
+    "typescript": "~5.6.2",
+    "vitest": "^5.0.3",
+    "ws": "^8.21.3"
+  }
+}

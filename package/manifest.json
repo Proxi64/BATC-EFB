@@ -1,0 +1,19 @@
+{
+  "dependencies": [],
+  "content_type": "MISC",
+  "title": "BATC EFB",
+  "manufacturer": "",
+  "creator": "Proxi64",
+  "package_version": "0.3.3",
+  "minimum_game_version": "1.3.23",
+  "minimum_compatibility_version": "3.20.0.00",
+  "export_type": "Community",
+  "builder": "Microsoft Flight Simulator 2024",
+  "release_notes": {
+    "neutral": {
+      "LastUpdate": "0.3.3: log redesigned: the time and the speaker sit in a tab joined to the left side of each message, in larger type.",
+      "OlderHistory": "0.3.2: log time and speaker drawn as a small square label (speaker letters spread over the width of the time).\n0.3.1: drop-down arrows drawn in Settings (no more empty boxes); time and speaker of the log aligned on the messages.\n0.3.0: compact layout for the tablet (all actions and frequencies fit on the screen); the app is placed above the EFB dock.\n0.2.4: package cleanup (app icon without embedded metadata, unused font removed). No functional change.\n0.2.3: sharper text and icons (the page is scaled with a CSS variable instead of a transform); Roboto Medium font.\n0.2.2: new app icon.\n0.2.1: new app icon.\n0.2.0: full BATC Remote interface in the EFB (Actions, Log, Frequencies, Settings), Roboto fonts shipped with the app.\n0.1.1: layout scaled to the tablet width, content placed under the EFB status bar.\n0.1.0: first version."
+    }
+  },
+  "total_package_size": "00000000000000625763"
+}
